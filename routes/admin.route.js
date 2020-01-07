@@ -6,7 +6,9 @@ module.exports = app => {
   const Customer = require("../models/Customer");
   const InvestmentApt = require("../models/InvestmentApt");
   const Token = require("../models/Token");
+  const mongoose = require("mongoose");
   const AdminBroOptions = {
+    databases: [mongoose],
     resources: [Customer, InvestmentApt, Token],
     branding: {
       companyName: "Stock Analysis"

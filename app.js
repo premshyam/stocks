@@ -11,6 +11,7 @@ const app = express();
 // const cloudinary = require("cloudinary");
 //global object called __basedir scop is anywhere in the project
 global.__basedir = __dirname;
+global.dbConnection;
 // middleware that only parses json
 app.use(bodyParser.json({ limit: "10mb", extended: true }));
 //
